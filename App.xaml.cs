@@ -8,7 +8,7 @@ namespace FightBack_SS
 		{
 			InitializeComponent();
 
-			MainPage = new FightBack_SSPage();
+			MainPage = new SS_LoginScreen();
 		}
 
 		protected override void OnStart()

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FightBack_SS.SS_LoginScreen" BackgroundImage = "Splash">
+	<StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" Spacing="25" Padding="0,300,0,0">
+		<StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center" WidthRequest="300" Padding="10,10,10,10">
+			<StackLayout Orientation="Horizontal" Spacing="0">
+				<Label Text="UserName:" Font="20" FontAttributes="Bold" TextColor="Yellow" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" />
+				<Entry x:Name="userName" HorizontalOptions="FillAndExpand" Placeholder="Enter Username" PlaceholderColor="Silver" TextColor="White" />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" Spacing="0">
+				<Label Text="Password:" Font="20" FontAttributes="Bold" TextColor="Yellow" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" />
+				<Entry x:Name="password" HorizontalOptions="FillAndExpand" Placeholder="Enter Password" PlaceholderColor="Silver" TextColor="White" />
+			</StackLayout>
+		</StackLayout>
+		<StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+			<Label x:Name="loginLbl" Text="Sign In" Font="22" FontAttributes="Bold" TextColor="Yellow" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="Transparent" WidthRequest="150" HeightRequest="60" />
+			<Label x:Name="registerLbl" Text="Register" Font="22" FontAttributes="Bold" TextColor="Yellow" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="Transparent" WidthRequest="150" HeightRequest="60" />
+		</StackLayout>
+		<Label x:Name="guestLbl" Text="Guest" Font="22" FontAttributes="Bold" TextColor="Yellow" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="Transparent" WidthRequest="150" HeightRequest="60" />
+	</StackLayout>
+</ContentPage>
