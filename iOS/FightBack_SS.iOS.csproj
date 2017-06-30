@@ -106,10 +106,13 @@
     <ImageAsset Include="Assets.xcassets\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Splash.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Splash.imageset\img3.jpeg" />
+    <ImageAsset Include="Assets.xcassets\RegistrationBackgroundImg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\RegistrationBackgroundImg.imageset\nightSky.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="Assets.xcassets\Splash.imageset\" />
+    <Folder Include="Assets.xcassets\RegistrationBackgroundImg.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
