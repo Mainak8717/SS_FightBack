@@ -16,7 +16,7 @@ namespace FightBack_SS
 				tapGestureRecognizerLogin.Tapped += (s, e) => {
 				OnLoginButtonClicked();
 			};
-			loginLbl.GestureRecognizers.Add(tapGestureRecognizerLogin);	
+			signInLbl.GestureRecognizers.Add(tapGestureRecognizerLogin);	
 
 			var tapGestureRecognizerGuest = new TapGestureRecognizer();
 			tapGestureRecognizerGuest.NumberOfTapsRequired = 1;
@@ -34,15 +34,15 @@ namespace FightBack_SS
 		}
 		void OnGuestButtonClicked()
 		{
-			//App.Current.MainPage = new SS_RegistrationScreen();
+			Application.Current.MainPage = new SS_HomeScreen();
 		}
 		void OnLoginButtonClicked()
 		{
-			//App.Current.MainPage = new SportsmanSpiritFightBack_LoginScreen();
+			Application.Current.MainPage = new SS_SideMenuMasterDetail();
 		}
 		void OnRegistrationButtonClicked()
 		{
-			App.Current.MainPage = new SS_RegistrationScreen();
+			Application.Current.MainPage = new SS_RegistrationScreen();
 		}
 	}
 }

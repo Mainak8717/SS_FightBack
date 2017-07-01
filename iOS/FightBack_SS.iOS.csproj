@@ -104,15 +104,42 @@
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\Splash.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\Splash.imageset\img3.jpeg" />
     <ImageAsset Include="Assets.xcassets\RegistrationBackgroundImg.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\RegistrationBackgroundImg.imageset\nightSky.jpg" />
+    <ImageAsset Include="Assets.xcassets\Login.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Login.imageset\img3.jpeg" />
+    <ImageAsset Include="Assets.xcassets\Splash.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Splash.imageset\img1.jpg" />
+    <ImageAsset Include="Assets.xcassets\SideMenu_Home.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\SideMenu_LegalHelp.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\SideMenu_ContactUs.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\SideMenu_Logout.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\SideMenu_Video.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\SideMenu_FollowUp.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\SideMenu_Checklist.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\SideMenu_Home.imageset\Home_Icon.png" />
+    <ImageAsset Include="Assets.xcassets\SideMenu_LegalHelp.imageset\LegalHelp_Icon.png" />
+    <ImageAsset Include="Assets.xcassets\SideMenu_ContactUs.imageset\ContactUs_Icon.png" />
+    <ImageAsset Include="Assets.xcassets\SideMenu_Logout.imageset\Logout_Icon.png" />
+    <ImageAsset Include="Assets.xcassets\SideMenu_Video.imageset\Videos_Icon.png" />
+    <ImageAsset Include="Assets.xcassets\SideMenu_FollowUp.imageset\FollowUp_icon.png" />
+    <ImageAsset Include="Assets.xcassets\SideMenu_Checklist.imageset\CheckList_Icon.png" />
+    <ImageAsset Include="Assets.xcassets\Construction.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Construction.imageset\underConstruction.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
-    <Folder Include="Assets.xcassets\Splash.imageset\" />
     <Folder Include="Assets.xcassets\RegistrationBackgroundImg.imageset\" />
+    <Folder Include="Assets.xcassets\Login.imageset\" />
+    <Folder Include="Assets.xcassets\Splash.imageset\" />
+    <Folder Include="Assets.xcassets\SideMenu_Home.imageset\" />
+    <Folder Include="Assets.xcassets\SideMenu_LegalHelp.imageset\" />
+    <Folder Include="Assets.xcassets\SideMenu_ContactUs.imageset\" />
+    <Folder Include="Assets.xcassets\SideMenu_Logout.imageset\" />
+    <Folder Include="Assets.xcassets\SideMenu_Video.imageset\" />
+    <Folder Include="Assets.xcassets\SideMenu_FollowUp.imageset\" />
+    <Folder Include="Assets.xcassets\SideMenu_Checklist.imageset\" />
+    <Folder Include="Assets.xcassets\Construction.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -125,9 +152,6 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\img1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

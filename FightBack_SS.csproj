@@ -35,6 +35,15 @@
     <EmbeddedResource Include="LoginAndRegistration\SS_RegistrationScreen.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="SideMenu\SS_SideMenuMasterDetail.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeScreen\SS_HomeScreen.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Situation Checklist\SS_SituationChecklistScreen.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -46,6 +55,17 @@
     </Compile>
     <Compile Include="LoginAndRegistration\SS_RegistrationScreen.xaml.cs">
       <DependentUpon>SS_RegistrationScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SideMenu\MenuViewModel.cs" />
+    <Compile Include="SideMenu\SideMenuItem.cs" />
+    <Compile Include="SideMenu\SS_SideMenuMasterDetail.xaml.cs">
+      <DependentUpon>SS_SideMenuMasterDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HomeScreen\SS_HomeScreen.xaml.cs">
+      <DependentUpon>SS_HomeScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Situation Checklist\SS_SituationChecklistScreen.xaml.cs">
+      <DependentUpon>SS_SituationChecklistScreen.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +84,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="LoginAndRegistration\" />
+    <Folder Include="SideMenu\" />
+    <Folder Include="HomeScreen\" />
+    <Folder Include="Situation Checklist\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

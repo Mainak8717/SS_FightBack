@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FightBack_SS.SS_RegistrationScreen" BackgroundImage = "RegistrationBackgroundImg.jpg">
-	<StackLayout Padding = "5,50,5,5">
+	<StackLayout Padding = "5,20,5,5">
 		<StackLayout HorizontalOptions="Center">
 			<Label x:Name="Registration" Text="Registration" Font="28" FontAttributes="Bold" TextColor="Yellow" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="Transparent" HeightRequest="70" />
 		</StackLayout>
@@ -8,33 +8,69 @@
 			<StackLayout Orientation="Vertical" x:Name="formStack" Spacing="5" HorizontalOptions = "Center" VerticalOptions = "Center">
 				<StackLayout Orientation="Horizontal" HorizontalOptions="Fill" WidthRequest="300" Padding="10,10,10,10">
 					<Label Text="Name:" TextColor="White" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" />
-					<Entry x:Name="firstName" TextColor="White" HorizontalOptions="EndAndExpand" WidthRequest="200"/>
+					<Entry x:Name="firstName" TextColor="White" HorizontalOptions="EndAndExpand" WidthRequest="200">
+						<Entry.TextColor >
+							<OnPlatform x:TypeArguments="Color"
+                      			iOS="#000000"
+                      			Android="#ffffff" />
+						</Entry.TextColor>
+					</Entry>
 				</StackLayout>
 				<StackLayout Orientation="Horizontal" HorizontalOptions="Fill" WidthRequest="300" Padding="10,10,10,10">
 					<Label Text="Address:" TextColor="White" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" />
-					<Entry x:Name="address" TextColor="White" HorizontalOptions="EndAndExpand" WidthRequest="200" />
+					<Entry x:Name="address" TextColor="White" HorizontalOptions="EndAndExpand" WidthRequest="200">
+						<Entry.TextColor >
+							<OnPlatform x:TypeArguments="Color"
+                      			iOS="#000000"
+                      			Android="#ffffff" />
+						</Entry.TextColor>
+					</Entry>
 				</StackLayout>
 				<StackLayout Orientation="Horizontal" HorizontalOptions="Fill" WidthRequest="300" Padding="10,10,10,10">
 					<Label Text="Mobile#:" TextColor="White" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" />
-					<Entry x:Name="mobile" TextColor="White" HorizontalOptions="EndAndExpand" WidthRequest="200" Keyboard="Telephone" />
+					<Entry x:Name="mobile" TextColor="White" HorizontalOptions="EndAndExpand" WidthRequest="200" Keyboard="Telephone" >
+						<Entry.TextColor >
+							<OnPlatform x:TypeArguments="Color"
+                      			iOS="#000000"
+                      			Android="#ffffff" />
+						</Entry.TextColor>
+					</Entry>
 				</StackLayout>
 				<StackLayout Orientation="Horizontal" HorizontalOptions="Fill" WidthRequest="300" Padding="10,10,10,10">
 					<Label Text="EmailId:" TextColor="White" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" />
-					<Entry x:Name="emailId" TextColor="White" HorizontalOptions="EndAndExpand" WidthRequest="200" Keyboard="Telephone" />
+					<Entry x:Name="emailId" TextColor="White" HorizontalOptions="EndAndExpand" WidthRequest="200" Keyboard="Email" >
+						<Entry.TextColor >
+							<OnPlatform x:TypeArguments="Color"
+                      			iOS="#000000"
+                      			Android="#ffffff" />
+						</Entry.TextColor>
+					</Entry>
 				</StackLayout>
 				<StackLayout Orientation="Horizontal" HorizontalOptions="Fill" WidthRequest="300" Padding="10,10,10,10">
 					<Label Text="Username:" TextColor="White" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" />
-					<Entry x:Name="username" TextColor="White" HorizontalOptions="EndAndExpand" WidthRequest="200" Keyboard="Default"/>
+					<Entry x:Name="username" TextColor="White" HorizontalOptions="EndAndExpand" WidthRequest="200" Keyboard="Default">
+						<Entry.TextColor>
+							<OnPlatform x:TypeArguments="Color"
+                      			iOS="#000000"
+                      			Android="#ffffff" />
+						</Entry.TextColor>
+					</Entry>
 				</StackLayout>
 				<StackLayout Orientation="Horizontal" HorizontalOptions="Fill" WidthRequest="300" Padding="10,10,10,10">
 					<Label Text="Password:" TextColor="White" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" />
-					<Entry x:Name="password" TextColor="White" HorizontalOptions="EndAndExpand" WidthRequest="200" Keyboard="Default" IsPassword="true" />
+					<Entry x:Name="password" TextColor="White" HorizontalOptions="EndAndExpand" WidthRequest="200" Keyboard="Default" IsPassword="true">
+						<Entry.TextColor >
+							<OnPlatform x:TypeArguments="Color"
+	                      		iOS="#000000"
+	                      		Android="#ffffff" />
+						</Entry.TextColor>
+					</Entry>
 				</StackLayout>
 				<BoxView HeightRequest="40" />
 			</StackLayout>
 		</ScrollView>
-		<StackLayout HorizontalOptions="CenterAndExpand" Orientation = "Horizontal" >
-			<Label x:Name="Register" Text="SUBMIT" Font="22" FontAttributes="Bold" TextColor="Yellow" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="Transparent" WidthRequest="100" HeightRequest="70" />
+		<StackLayout HorizontalOptions="CenterAndExpand" Orientation = "Horizontal" Padding = "0,20,0,0">
+			<Label x:Name="Submit" Text="SUBMIT" Font="22" FontAttributes="Bold" TextColor="Yellow" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="Transparent" WidthRequest="100" HeightRequest="70" />
 			<Label x:Name="Cancel" Text="CANCEL" Font="22" FontAttributes="Bold" TextColor="Yellow" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="Transparent" WidthRequest="100" HeightRequest="70" />
 		</StackLayout>
 	</StackLayout>

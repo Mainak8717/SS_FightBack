@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MSCommunity_Xamarin"
+             x:Class="FightBack_SS.SS_SideMenuMasterDetail">
+	<MasterDetailPage.Master>
+    <ContentPage Title="Menu"
+				 Icon = "SideMenu_Icon.png"
+                 BackgroundColor="#ff0000">
+
+      <StackLayout Orientation="Vertical" BackgroundColor = "Red" >
+        <StackLayout BackgroundColor="Red"
+                     HeightRequest="80">
+
+          <Label Text="Mainak"
+				 HorizontalTextAlignment = "Center"
+                 FontSize="20"
+				 FontAttributes="Bold"
+				 HorizontalOptions = "CenterAndExpand"
+                 VerticalOptions="Center"
+                 TextColor="Black"
+				 BackgroundColor = "Red"/>
+        </StackLayout>
+
+        <ListView x:Name="navigationDrawerList"
+                  RowHeight="60"
+                  SeparatorVisibility="None"
+                  BackgroundColor="#e8e8e8"
+				  ItemsSource = "{Binding MenuItems}">
+
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ViewCell>
+                
+                <!-- Main design for our menu items -->
+                <StackLayout VerticalOptions="FillAndExpand"
+                             Orientation="Horizontal"
+                             Padding="20,0,0,10"
+                             Spacing="20">
+
+                  <Image Source="{Binding Icon}"
+                         WidthRequest="40"
+                         HeightRequest="40"
+                         VerticalOptions="Center" />
+
+                  <Label Text="{Binding Title}"
+                         FontSize="Medium"
+                         VerticalOptions="Center"
+                         TextColor="Black"/>
+                </StackLayout>
+              </ViewCell>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+      </StackLayout>
+
+    </ContentPage>
+  </MasterDetailPage.Master>
+
+  <MasterDetailPage.Detail >
+    <NavigationPage BackgroundColor = "Red">
+    </NavigationPage>
+  </MasterDetailPage.Detail>
+</MasterDetailPage>
+
+<!--<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="FightBack_SS.SS_SideMenuMasterDetail">
+	<ContentPage.Content>
+	</ContentPage.Content>
+</ContentPage>-->
