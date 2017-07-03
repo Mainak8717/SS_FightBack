@@ -67,6 +67,7 @@
     <Compile Include="Situation Checklist\SS_SituationChecklistScreen.xaml.cs">
       <DependentUpon>SS_SituationChecklistScreen.xaml</DependentUpon>
     </Compile>
+    <Compile Include="IAppHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

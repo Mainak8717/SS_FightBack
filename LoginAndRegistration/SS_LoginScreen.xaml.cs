@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Diagnostics;
 using Xamarin.Forms;
 
 namespace FightBack_SS
@@ -16,23 +16,24 @@ namespace FightBack_SS
 				tapGestureRecognizerLogin.Tapped += (s, e) => {
 				OnLoginButtonClicked();
 			};
-			signInLbl.GestureRecognizers.Add(tapGestureRecognizerLogin);	
+			//signInLbl.GestureRecognizers.Add(tapGestureRecognizerLogin);	
 
 			var tapGestureRecognizerGuest = new TapGestureRecognizer();
 			tapGestureRecognizerGuest.NumberOfTapsRequired = 1;
 			tapGestureRecognizerGuest.Tapped += (s, e) => {
 				OnGuestButtonClicked();
 			};
-			guestLbl.GestureRecognizers.Add(tapGestureRecognizerGuest);	
+			//guestLbl.GestureRecognizers.Add(tapGestureRecognizerGuest);	
 
 			var tapGestureRecognizerRegistration = new TapGestureRecognizer();
 			tapGestureRecognizerRegistration.NumberOfTapsRequired = 1;
 			tapGestureRecognizerRegistration.Tapped += (s, e) => {
 				OnRegistrationButtonClicked();
 			};
-			registerLbl.GestureRecognizers.Add(tapGestureRecognizerRegistration);
+			//registerLbl.GestureRecognizers.Add(tapGestureRecognizerRegistration);
 		}
-		void OnGuestButtonClicked()
+
+		async void OnGuestButtonClicked()
 		{
 			Application.Current.MainPage = new SS_HomeScreen();
 		}
